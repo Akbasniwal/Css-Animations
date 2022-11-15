@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #fff;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    color: #112434;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation li{
+    list-style: none;
+}
+.navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+}
+.navigation li a:hover,.navigation li a.active{
+    background-color: #112434;
+    color: #fff;
+}
+.parallex{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg,#112434,rgb(80, 142, 137),white);
+}
+.left{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    bottom: -100px;
+    z-index: 10;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 50%;
+    z-index: 10;
+}
+.handshake{
+    position: relative;
+    width: 100%;
+}
+.handshake img{
+    pointer-events: none;
+}
+#text{
+    color: white;
+    position: absolute;
+    left: 50%;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #112434;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+.sec2{
+    position: relative;
+    padding: 100px;
+    margin: 100px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}

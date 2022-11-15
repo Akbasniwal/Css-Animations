@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallex website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </header>
+
+    <section class="parallex">
+      <h2 id="text">Parallex website</h2>
+      <div class="handshake">
+        <img class="left" id="left" src="left.png" alt="" />
+        <img class="right" id="right" src="right.png" alt="" />
+      </div>
+    </section>
+    <section class="sec">
+      <h2>Parallex Website</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        ullam laborum voluptas possimus dolorum hic consequuntur recusandae
+        asperiores aliquid quaerat amet explicabo dicta iste, dolor porro
+        impedit similique soluta sed odio nostrum quos! Quisquam consequuntur
+        tempora impedit recusandae iure. Eaque commodi nostrum ratione dolorem
+        quas maxime quidem aperiam enim ad perspiciatis suscipit nulla minima
+        pariatur similique sunt, aspernatur ducimus, est impedit laudantium
+        eligendi accusantium consectetur possimus! Distinctio veritatis aut
+        culpa recusandae provident odit nesciunt natus quam illo sint eius
+        quaerat harum cupiditate repudiandae, voluptas quisquam delectus nobis
+        maxime error at! Veritatis voluptas eos dolores natus ducimus quidem non
+        distinctio earum nisi consequuntur illum id, molestias debitis dolore
+        impedit assumenda tempora eveniet officia laborum commodi! Pariatur
+        consequuntur ipsam, reiciendis accusamus id voluptas a dolore quis ipsum
+        nesciunt praesentium et delectus! Sit, incidunt porro doloribus
+        similique quaerat quod tempora provident possimus a excepturi ut animi
+        dolorem, rerum enim et sed dicta corporis blanditiis quam in sunt!
+        Suscipit deleniti vel quae impedit expedita illo nostrum molestiae,
+        minima dolor labore a nobis, sed quos eos aperiam, necessitatibus
+        similique? Culpa maxime eaque error. Hic repudiandae inventore explicabo
+        soluta pariatur voluptates distinctio quaerat quae, quam similique quo
+        quos reiciendis aliquam incidunt excepturi. Id dolore quia, maxime,
+        nihil asperiores molestias alias quas esse, harum repudiandae ullam sunt
+        fugit officia numquam quis! Ab labore earum animi similique accusamus
+        facilis saepe ratione cumque quasi voluptatem iusto, voluptates voluptas
+        molestias qui ipsa laborum delectus impedit est! At eos dolor facilis
+        debitis iusto, natus saepe fuga, libero ullam repellat architecto, modi
+        minima mollitia quae possimus dolores tempora veritatis distinctio
+        consectetur aliquid? Aliquid quae dolorum cum incidunt blanditiis unde
+        voluptates quo voluptatibus dolorem commodi, esse repellendus fugiat?
+        Eveniet quos reiciendis porro similique unde velit cumque molestiae nam
+        illo vel amet voluptas ex libero iure voluptates, deserunt maiores,
+        dolor fugiat ratione et? Adipisci debitis aliquam a. Voluptatem officiis
+        natus eos culpa expedita, exercitationem fuga doloribus iste esse sed
+        dolore accusantium mollitia quod ut nulla numquam. Omnis veniam nostrum
+        harum, ea aspernatur dolore reiciendis praesentium rem, est quibusdam
+        fugit, eos ipsum iste. Perferendis, ullam inventore temporibus enim
+        recusandae dolores debitis esse, distinctio laudantium ad impedit
+        beatae, amet quia magni quos officia dolore asperiores aut. Ab, iusto
+        omnis quaerat sed exercitationem alias culpa perspiciatis quisquam
+        nesciunt, sint ad rem eaque nam hic error! Sunt, qui a voluptatum fugit
+        perspiciatis mollitia? Molestiae hic et obcaecati dolore distinctio odit
+        ratione. Qui fugiat perferendis ratione eligendi exercitationem, soluta
+        ipsa? Dignissimos corporis inventore ex consequatur aperiam odio
+        molestias ipsum ad illo ducimus consectetur, voluptates at harum quidem
+        itaque accusantium blanditiis ab. Eligendi error voluptate, impedit
+        necessitatibus quos, totam minima corrupti dolorum quasi aliquid
+        perspiciatis, repellendus sint ipsa voluptates voluptatibus? Sequi
+        nesciunt culpa autem, sit nihil alias minus eius minima repellat
+        corrupti. Ad error quia dolore dignissimos? Deleniti sunt veritatis, ad
+        est modi optio quasi temporibus repellat quam at fugit laborum atque
+        quibusdam, labore, consequuntur distinctio nihil ex nesciunt praesentium
+        consectetur dolorem. Fugit, temporibus ratione, odio explicabo
+        repellendus facere accusamus eum et illum placeat dicta nam quasi
+        doloremque iure officiis.
+      </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#left", {
+        scrollTrigger: {
+          scrub: true,
+        },
+        x: -250,
+      });
+      gsap.from("#right", {
+        scrollTrigger: {
+          scrub: true,
+        },
+        x: 200,
+      });
+      gsap.from("#text", {
+        scrollTrigger: {
+          scrub: true,
+        },
+        x: -200,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic-Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="menu">
+      <div class="toggle"><i class="add icon"></i></div>
+      <li style="--i: 0; --clr: #ff2972">
+        <a href=""><i class="home icon"></i></a>
+      </li>
+      <li style="--i: 1; --clr: #fee800">
+        <a href=""><i class="user icon"></i></a>
+      </li>
+      <li style="--i: 2; --clr: #04fc43">
+        <a href=""><i class="setting icon"></i></a>
+      </li>
+      <li style="--i: 3; --clr: #fe00f1">
+        <a href=""><i class="mail icon"></i></a>
+      </li>
+      <li style="--i: 4; --clr: #00b0fe">
+        <a href=""><i class="key icon"></i></a>
+      </li>
+      <li style="--i: 5; --clr: #fea600">
+        <a href=""><i class="video icon"></i></a>
+      </li>
+      <li style="--i: 6; --clr: #a529ff">
+        <a href=""><i class="game icon"></i></a>
+      </li>
+      <li style="--i: 7; --clr: #01bdab">
+        <a href=""><i class="photo icon"></i></a>
+      </li>
+    </ul>
+    <script>
+      let toggle = document.querySelector(".toggle");
+      let menu = document.querySelector(".menu");
+      toggle.onclick = function () {
+        menu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
