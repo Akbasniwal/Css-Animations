@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+
+
+body {
+    height: 98vh;
+    padding: 2px;
+    background: #000;
+  }
+  
+.wrapper {
+    height: 100%;
+  background-color: transparent;
+  color: #444;
+  height: calc(100%-4px);
+  display: flex;
+}
+  
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  min-width: 500px;
+  /* Use box-sizing so that element's outerwidth will match width property */
+  box-sizing: border-box;
+  
+  /* Allow box to grow and shrink, and ensure they are all equally sized */
+  flex: 1 1 auto;
+}
+.handler {
+  width: 10px;
+  padding: 0;
+  cursor: ew-resize;
+  flex: 0 0 auto;
+}
+
+.handler::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: white;
+  margin: 0 auto;
+}
+
+#code{
+    min-height: 800px;
+    background-color: transparent;
+    color: #fff;
+    font-size: large;
+    font-family: 'Fira Code', monospace;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+#code:focus{
+    outline: none;
+}
+.copy_icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.copy_icon button{
+    color: green;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.copy_icon button:hover{
+    transform: scale(1.1);
+}

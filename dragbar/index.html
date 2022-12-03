@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DragBar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <div class="wrapper">
+      <div class="box">A</div>
+      <div class="handler"></div>
+      <div class="box" style="position: relative">
+        <textarea name="code" id="code"></textarea>
+        <div class="copy_icon">
+          <button
+            class="material-symbols-outlined"
+            onclick="navigator.clipboard.writeText(document.getElementById('code').value);"
+          >
+            content_copy
+          </button>
+          <button
+            class="material-symbols-outlined"
+            onclick="download('akbasniwal.txt', document.getElementById('code').value);"
+          >
+            download
+          </button>
+        </div>
+      </div>
+    </div>
+    <console></console>
+    <script src="script.js"></script>
+  </body>
+</html>
