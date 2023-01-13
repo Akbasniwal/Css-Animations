@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(29, 27, 27);
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 200px;
+    background: rgba(196, 44, 44, 0.532);
+    width: 200px;
+    rotate: calc(var(--i) * 60deg);
+    transform: rotateY(60deg);
+    animation: animate 3s infinite linear;
+    animation-delay: calc(var(--i)*-1s);
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateX(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+        filter: hue-rotate(360deg);
+    }
+}

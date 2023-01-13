@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="">Anish</div>
+    <script src="three.min.js"></script>
+    <script>
+      var scene = new Three.Scene();
+      var camera = new Three.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight
+      );
+      var renderer = new Three.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      $("body").append(renderer.domElement);
+
+      var geometry = new Three.BoxGeometry(1, 1, 1);
+      var material = new Three.MeshBasicMaterial({ color: 0xff0000 });
+      var cube = new Three.Mesh(geometry, material);
+      scene.add(cube);
+      renderer.render(scene, camera);
+
+      cube.position.z = -5;
+      cube.position.y = 10;
+      cube.position.x = 5;
+
+      var animate = function () {
+        cube.rotation.x += 0.01;
+        renderer.render(scene, camera);
+        requestAnimationFrame(animate);
+      };
+      animate();
+    </script>
+  </body>
+</html>
